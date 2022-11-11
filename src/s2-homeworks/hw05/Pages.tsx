@@ -7,7 +7,7 @@ import JuniorPlus from './pages/JuniorPlus'
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
-    JUNIOR: '/junior',
+    JUNIOR: '/junior1',
     JUNIOR_PLUS: '/junior-plus',
 }
 
