@@ -1,11 +1,21 @@
 .App {
     --header_height: 60px;
 }
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .hw {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .hwTitle {
-
+    width: 70%;
+    margin: 39px auto 39px auto;
+    font-size: 200%;
+    font-weight: bold;
 }
