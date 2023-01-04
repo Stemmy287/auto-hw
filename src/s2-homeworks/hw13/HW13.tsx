@@ -37,7 +37,7 @@ const HW13 = () => {
                 console.log(res)
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.errorText + res.data.info)
+                setText(res.data.errorText)
                 setInfo('')
 
             })
@@ -46,18 +46,18 @@ const HW13 = () => {
                 if (e.response.status === 500){
                     setCode('Код 500!')
                     setImage(error500)
-                    setText(e.response.data.errorText + e.response.data.info)
+                    setText(e.response.data.errorText)
                     setInfo('')
                 } else if (e.response.status === 400) {
                     setCode('Код 400!')
                     setImage(error400)
-                    setText(e.response.data.errorText + e.response.data.info)
+                    setText(e.response.data.errorText)
                     setInfo('')
                 } else if (e.code === "ERR_NETWORK") {
                     console.log(e)
-                    setCode('Error!')
+                    setCode('Error')
                     setImage(errorUnknown)
-                    setText(e.message + e.name)
+                    setText(e.message)
                     setInfo('')
                 }
             })
