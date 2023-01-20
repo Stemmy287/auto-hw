@@ -67,7 +67,7 @@ const HW15 = () => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
-        sendQuery({page: newPage, count: newCount})
+        sendQuery({sort ,page: newPage, count: newCount})
         setSearchParams({page: JSON.stringify(newPage), count: JSON.stringify(newCount)})
         // setPage(
         // setCount(
@@ -82,7 +82,7 @@ const HW15 = () => {
         // делает студент
         setSort(newSort)
         setPage(1)
-        sendQuery({sort: newSort})
+        sendQuery({sort: newSort, page, count})
         // setSort(
         // setPage(1) // при сортировке сбрасывать на 1 страницу
         setSearchParams({sort: newSort})
